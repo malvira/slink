@@ -16,6 +16,7 @@ LED Configuration:
 ------------------
 
 strings of 4 LEDs
+
 + 7.6V * 4 = approx 30V per string
 
 4 strings in parallel in a checker board pattern
@@ -30,9 +31,7 @@ need to measure LED characteristics to determine bypassing
 requirements
 
 + 30mV is about 1A change in the LED.
-
 + i = C dV/dt
-
 + for 250us pulse, 40A = C * 0.1V / 250 uS
   C = 100mF (per LED).
 
@@ -48,48 +47,47 @@ Bypassing for each string or board
 
 Pulldown FET for each string or board
 
-    + Test rig use FDP5800 $2.15 each 6mOhm @ 80A.
-    + 785-1221-1-ND AOD4184A, $.79 ea 7mOhm @ 20A logic level drive
-    + lay out one per string for now with rework option to test all
-    strings on one.
++ Test rig use FDP5800 $2.15 each 6mOhm @ 80A.
++ 785-1221-1-ND AOD4184A, $.79 ea 7mOhm @ 20A logic level drive
++ lay out one per string for now with rework option to test all
+  strings on one.
 
 Gate driver for each FET with gate resistor to control on/off
 transients.
 
-    + use TC4427, TC4426. Can only take 18V supply. Need a separate
++ use TC4427, TC4426. Can only take 18V supply. Need a separate
     12V supply or so for the gate drivers.
-
-    + might not need it for the AOD4184A, have a board option to
++ might not need it for the AOD4184A, have a board option to
     bypass the gate driver.
-
-    + laying it out now gives us the option to change the FETs.
++ laying it out now gives us the option to change the FETs.
 
 Sense resistor for current test point.
 
-    + MCS1632R010FER 10mOhm 1206 1W
-      MCS1632R010FERCT-ND $0.35 ea
-    + needs to be ground referenced. One per FET.
++ MCS1632R010FER 10mOhm 1206 1W
+  MCS1632R010FERCT-ND $0.35 ea
+
++ needs to be ground referenced. One per FET.
 
 Trim resistance to balance each string or board.
 
-     + 300mV trim will adjust about 10A
-     + 1mOhm trim would do 30ish mV at 40A.
-     + at 20A, 40mV on LED adjusts down 1A to 19A. (supply is 90mV).
-         - that's a 1.5mOhm trim.
-     + a 50mil trace that's 100mil long should be 1mOhm. 
-         - we could do binary weights.
-         - 24 mil is 2mOhm
-         - 12 mil is 4mOhm
-         - 6 mil is  8mOhm
-     + use solder braid to short out segments for trim.
++ 300mV trim will adjust about 10A
++ 1mOhm trim would do 30ish mV at 40A.
++ at 20A, 40mV on LED adjusts down 1A to 19A. (supply is 90mV).
+    - that's a 1.5mOhm trim.
++ a 50mil trace that's 100mil long should be 1mOhm. 
+    - we could do binary weights.
+    - 24 mil is 2mOhm
+    - 12 mil is 4mOhm
+    - 6 mil is  8mOhm
++ use solder braid to short out segments for trim.
 
 Overall current magnitude set by board rail voltage.
 
 Fuses for each string or board.
 
-    + 507-1186-1-ND 1A 1206 package $0.62 ea, slow blow
-    + there are a bunch in 1206 --- might have to try different
-      current ratings
++ 507-1186-1-ND 1A 1206 package $0.62 ea, slow blow
++ there are a bunch in 1206 --- might have to try different
+  current ratings
 
 I think per string is a good idea. Otherwise we are talking 200A
 pulses and ESR becomes really important. Although Slink will probably
