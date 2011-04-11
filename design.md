@@ -102,6 +102,15 @@ Question for Jeff:
     I remember us talking about 4 per in^2 but I don't remember if that
     was for Slink or if that was the 100% population.
 
+Some options are:
+
+    24 in^2 total
+
+    + 1 string  4 LEDs/board, 1 LED/ 6 in^2
+    + 2 strings 8 LEDs/board, 1 LED/ 3 in^2
+    + 4 strings 16 LEDs/board, 1 LED/ 1.5 in^2
+    + 8 strings 32 LEDs/board, 1 LED / 0.75 in^2 
+
 PCB: 
 ---
 
