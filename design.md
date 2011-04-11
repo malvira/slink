@@ -16,7 +16,7 @@ LED Configuration:
 ------------------
 
 strings of 4 LEDs
-    + 7.6V * 4 = approx 30V per string
++ 7.6V * 4 = approx 30V per string
 
 4 strings in parallel in a checker board pattern
 
@@ -29,10 +29,12 @@ at 1% duty ratio about 2.5 mW average per mOhm.
 need to measure LED characteristics to determine bypassing
 requirements
 
-    + 30mV is about 1A change in the LED.
-    + i = C dV/dt
-    + for 250us pulse, 40A = C * 0.1V / 250 uS
-      C = 100mF (per LED).
++ 30mV is about 1A change in the LED.
+
++ i = C dV/dt
+
++ for 250us pulse, 40A = C * 0.1V / 250 uS
+  C = 100mF (per LED).
 
 338-2158-1-ND is 1.5mF 35V surface mount $2.56. One or two of these
 per board.
