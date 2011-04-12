@@ -115,6 +115,13 @@ Some options are:
 
 Answer is 4 per sqin is 100%, slink might only need 25%.
 
+96 LEDs total (for 8x3 board). 
+
+24 strings per board. Try for 8 strings per FET. At 25% pop. that will
+be 2 strings per FET. 3 FETs per board.
+
+rev 1 will be used to see how far we can push each FET.
+
 PCB: 
 ---
 
