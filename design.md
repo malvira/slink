@@ -8,6 +8,7 @@ Digikey: XPGWHT-01-0000-00EE5CT-ND
 
 qty 1:   $5.43
 qty 100: $4.80
+gty 1000: $2.79 (TR)
 
 Handles 50A 250us pulses --- breaks above 50A.
 approx 7.6V for 1 LED
