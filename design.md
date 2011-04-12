@@ -6,6 +6,8 @@ XPGWHT-01-0000-00EE5
 
 Digikey: XPGWHT-01-0000-00EE5CT-ND
 
++ eagle device done.
+
 qty 1:   $5.43
 qty 100: $4.80
 
@@ -38,6 +40,8 @@ requirements
 338-2158-1-ND is 1.5mF 35V surface mount $2.56. One or two of these
 per board.
 
++ eagle device done.
+
 565-2915-ND is 6.8mF 63V $4.1, bank of these on the power supply.
 
 FET/Drive circuit:
@@ -62,6 +66,7 @@ transients.
 + might not need it for the AOD4184A, have a board option to
     bypass the gate driver.
 + laying it out now gives us the option to change the FETs.
++ Need reverse polarity protection on this supply.
 
 Sense resistor for current test point.
 
@@ -90,6 +95,14 @@ Fuses for each string or board.
 + 507-1186-1-ND 1A 1206 package $0.62 ea, slow blow
 + there are a bunch in 1206 --- might have to try different
   current ratings
++ 800% blows in min. 2ms max 50ms. That would be 40A. Must be per
+string.
++ others to look into: 1206SFH100F/24CT-ND has 20A fuse (3 mOhm).
++ Do one per FET for now...
++ Might need something more like 507-1524-1-ND
++ or might need to fuse the main power supply or put a breaker on it.
++ Maybe fuse the bus wires with automotive fuses?
++ SMD1206 eagle package added along with FUSE device.
 
 I think per string is a good idea. Otherwise we are talking 200A
 pulses and ESR becomes really important. Although Slink will probably
@@ -120,6 +133,8 @@ Answer is 4 per sqin is 100%, slink might only need 25%.
 24 strings per board. Try for 8 strings per FET. At 25% pop. that will
 be 2 strings per FET. 3 FETs per board.
 
+6 FETs per board should work well. That would be 4 strings per FET.
+
 rev 1 will be used to see how far we can push each FET.
 
 PCB: 
@@ -142,20 +157,22 @@ TDB connectors for logic level on/off signals.
 Bus Bar Pads:
 ------------
 
-TDB
-
+Half inch on top and bottom layer will be about 1mOhm per 3 inches.
 
 Tasks
 =====
 
 + determine LEDs per in^2 and population options (50%-100% or 25%,50%,100%)
+    - done
 + create slink.brd with formfactor part
+    - preliminary formfactor done
 + add leds to slink.sch and slink.brd 
+    - done
 + place LEDS
 + determine and place mounting holes
+    - preliminary mounting holes done
 + hook up leds in .sch
 + route LEDS
-
 + create FET device, hookup and place
 + bypass caps
 + determine connectors, hookup and place
