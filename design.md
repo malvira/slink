@@ -1,4 +1,4 @@
-HELLO! LED:
+LED:
 ----
 
 Cree:
@@ -50,6 +50,7 @@ Pulldown FET for each string or board
 
 + Test rig use FDP5800 $2.15 each 6mOhm @ 80A.
 + 785-1221-1-ND AOD4184A, $.79 ea 7mOhm @ 20A logic level drive
+    - eagle device done
 + lay out one per string for now with rework option to test all
   strings on one.
 
@@ -58,6 +59,7 @@ transients.
 
 + use TC4427, TC4426. Can only take 18V supply. Need a separate
     12V supply or so for the gate drivers.
+    - eagle device done
 + might not need it for the AOD4184A, have a board option to
     bypass the gate driver.
 + laying it out now gives us the option to change the FETs.
@@ -66,7 +68,7 @@ Sense resistor for current test point.
 
 + MCS1632R010FER 10mOhm 1206 1W
   MCS1632R010FERCT-ND $0.35 ea
-
+    - eagle device done
 + needs to be ground referenced. One per FET.
 
 Trim resistance to balance each string or board.
@@ -114,6 +116,13 @@ Some options are:
 
 Answer is 4 per sqin is 100%, slink might only need 25%.
 
+96 LEDs total (for 8x3 board). 
+
+24 strings per board. Try for 8 strings per FET. At 25% pop. that will
+be 2 strings per FET. 3 FETs per board.
+
+rev 1 will be used to see how far we can push each FET.
+
 PCB: 
 ---
 
@@ -130,6 +139,12 @@ boards side-by-side.
 4-40 clearance holes for mounting.
 
 TDB connectors for logic level on/off signals.
+
+Bus Bar Pads:
+------------
+
+TDB
+
 
 Tasks
 =====
