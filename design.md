@@ -1,4 +1,4 @@
-HELLO! LED:
+LED:
 ----
 
 Cree:
