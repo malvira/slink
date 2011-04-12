@@ -1,4 +1,4 @@
-LED:
+HELLO! LED:
 ----
 
 Cree:
@@ -110,6 +110,8 @@ Some options are:
 + 2 strings 8 LEDs/board, 1 LED/ 3 in^2
 + 4 strings 16 LEDs/board, 1 LED/ 1.5 in^2
 + 8 strings 32 LEDs/board, 1 LED / 0.75 in^2 
+
+Answer is 4 per sqin is 100%, slink might only need 25%.
 
 PCB: 
 ---
