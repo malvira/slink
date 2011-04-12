@@ -139,6 +139,12 @@ boards side-by-side.
 
 TDB connectors for logic level on/off signals.
 
+Bus Bar Pads:
+------------
+
+TDB
+
+
 Tasks
 =====
 
