@@ -170,10 +170,28 @@ Tasks
 + add leds to slink.sch and slink.brd 
     - done
 + place LEDS
+    - done
 + determine and place mounting holes
     - preliminary mounting holes done
 + hook up leds in .sch
+    - done
 + route LEDS
 + create FET device, hookup and place
+    - done
 + bypass caps
+    - done
 + determine connectors, hookup and place
+
+Routing Order:
+--------------
+
+LED strings to FET
+FET path to GND
+Gate drivers to FETs
+Power to gate drivers
+logic level signals to gate drivers
+Route back to a connector:
++ 12v0
++ GND
++ 1-6 logic level drives (you could connect them all, or vertical
+groups, or keep them individual)
