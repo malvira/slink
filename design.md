@@ -109,6 +109,10 @@ I think per string is a good idea. Otherwise we are talking 200A
 pulses and ESR becomes really important. Although Slink will probably
 be in the 25% populated region.
 
++ decided to ditch the PCB fusing and just use an in-line option:
+    - http://www.allelectronics.com/make-a-store/item/FHP-25/WEATHERPROOF-ATC-BLADE-FUSE-HOLDER//1.html
+    - http://www.allelectronics.com/make-a-store/item/FHP-2/IN-LINE-AGC-3AG-FUSE-HOLDER//1.html
+
 Question for Jeff:
 
     we are going to do a layout that can have 25%, 50%, or 100% of the
