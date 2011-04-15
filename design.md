@@ -180,12 +180,17 @@ Tasks
 + hook up leds in .sch
     - done
 + route LEDS
+    - done
 + create FET device, hookup and place
     - done
 + bypass caps
     - done
 + determine connectors, hookup and place
-
+    - connector is 3 pin single row 0.1" holes, vertical groups of
+      LEDs
++ add 12v0 regulator
+    - MC78M12CDTGOS-ND $0.53, TO-252-3
+ 
 Routing Order:
 --------------
 
