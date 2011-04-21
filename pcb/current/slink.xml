@@ -1,0 +1,10 @@
+<cad>
+  <part class="pcb">
+    <doc class="eagle-sch" name="schematic">
+      <data class="string" name="filename">slink.brd</data>
+    </doc>
+    <doc class="bom" name="bom">
+      <data class="string" name="filename">slink.csv</data>
+    </doc>
+  </part>
+</cad>
