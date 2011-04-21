@@ -164,6 +164,8 @@ Bus Bar Pads:
 
 Half inch on top and bottom layer will be about 1mOhm per 3 inches.
 
+Boards will be star connected for power with inline fusing.
+
 Tasks
 =====
 
@@ -188,9 +190,18 @@ Tasks
 + determine connectors, hookup and place
     - connector is 3 pin single row 0.1" holes, vertical groups of
       LEDs
+    - done
 + add 12v0 regulator
     - MC78M12CDTGOS-ND $0.53, TO-252-3
- 
+    - done
++ order PCB
+    - done 
++ order stencil
+    - done
++ Make BOM with order detail
++ order parts
++ finish BOM
+
 Routing Order:
 --------------
 
@@ -204,3 +215,5 @@ Route back to a connector:
 + GND
 + 1-6 logic level drives (you could connect them all, or vertical
 groups, or keep them individual)
+    - connected in vertical pairs.
+
